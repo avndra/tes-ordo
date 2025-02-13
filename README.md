@@ -29,6 +29,30 @@ You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
+## Installation Steps
+
+1. Clone the repository:
+   git clone <repository_url>
+   cd <project_directory>
+2. Install dependencies:
+   composer install
+3. Configure environment variables:
+   cp .env.example .env
+   - Update database credentials in .env file.
+4. Generate application key:
+  php artisan key:generate
+5. Run migrations and seed database:
+  php artisan migrate --seed
+6. Start the application:
+   php artisan serve
+
+   ## Running Unit Tests
+
+To run the unit tests, use:
+php artisan test
+
+Ensure PHPUnit or Pest is properly configured in the project.
+
 ## Laravel Sponsors
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
